@@ -32,16 +32,32 @@ ul li:nth-child(-n+3){
     
 }
 
-/*.links a:hover {
-    font-style: italic;
-}*/
+.java {
+    background-color: hotpink;
+}
 
-/*
-.links:hover:before{
-    
-    content: attr(java);
-    text-decoration: chartreuse;
-}*/
+a.link-1:hover{    
+    color: orangered; 
+    font-weight: bold;
+}
+a.link-2:hover{    
+    color: forestgreen; 
+    font-weight: bold;
+}
+a.link-3:hover{    
+    color: black; 
+    font-weight: bold;
+}
+a.link-4:hover{    
+    color: yellow; 
+    font-weight: bold;
+}
+a.link-5:hover{    
+    color: greenyellow; 
+    font-weight: bold;
+}
+
+
 
 
 /*

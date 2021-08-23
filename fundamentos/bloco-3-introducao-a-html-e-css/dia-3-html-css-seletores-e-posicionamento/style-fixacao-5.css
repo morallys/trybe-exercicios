@@ -14,6 +14,35 @@ h1, h2, h3 {
     color: red;
 }
 
+h1, h2, h3 em{
+    font-size: 40px;
+    border: black solid 1px;
+}
+
+li {
+    font-size: 20px;    
+}
+
+li em {
+    font-weight: bold;
+}
+
+ul li:nth-child(-n+3){
+    color: blue;
+    
+}
+
+/*.links a:hover {
+    font-style: italic;
+}*/
+
+/*
+.links:hover:before{
+    
+    content: attr(java);
+    text-decoration: chartreuse;
+}*/
+
 
 /*
 Crie o arquivo style.css e resolva os seguintes exercícios:

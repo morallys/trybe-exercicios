@@ -20,7 +20,7 @@
 // console.log("Perímetro: ", perimeter);
 
 // Exercício de fixação - 3
-
+/*
 const notaCanditada = 59;
 
 if (notaCanditada >= 80) {
@@ -31,6 +31,72 @@ if (notaCanditada >= 80) {
 
 }else {
     console.log("Você foi reprovada(o)");
+}
+*/
+// Exercício de fixação - 4 - Condição &&
+/*
+const currentHour = 1;
+let message = "";
+
+if (currentHour >= 22){
+    message = "Não deveríamos comer nada, é hora de dormir";
+    console.log(message);
+
+}else if (currentHour >= 18 && currentHour < 22){
+    message = "Rango da noite, vamos jantar :D";
+    console.log(message);
+}else if (currentHour >= 14 && currentHour < 18){
+    message = "Vamos fazer um bolo pro café da tarde?";
+    console.log(message);
+
+}else if (currentHour > 11 && currentHour < 14){
+    message = "Horá do almoço!!!";
+    console.log(message);
+
+}else if (currentHour > 4 && currentHour < 11) {
+    message = "Hmmm, cheiro de cafŕ recém passado";
+    console.log(message);
+}else {
+    message = "Soninho!!!";
+    console.log(message);
+}
+*/
+
+// Exercício de fixação - 5 - Condição ||
+/*
+let weekDay = "segunda-feira"
+
+if (weekDay === "segunda-feira" || weekDay === "tercça-feira" || weekDay === "quarta-feira" || weekDay === "quinta-feira" || weekDay === "sexta-feira") {
+    console.log("Oba, mais um dia de aprendizado na Trybe >:D");
+
+}else {
+    console.log("FINALMENTE, descanso merecido UwU");
+}
+*/
+/*
+console.log((2 + 2) === 4);
+console.log(!(2 + 2) === 4);
+*/
+
+// Exercício de fixação - 6 - Condição ||
+
+let pessoaCandidata = "aprovada";
+
+switch (pessoaCandidata) {
+    case "aprovada":
+        console.log("Parabéns, você foi aprovada(o)");
+        break;
+    
+    case "lista":
+        console.log("Você está na nossa lista de espera");
+        break;
+    
+    case "reprovada":
+        console.log("Você foi reprovada(o)");
+        break;
+
+    default:
+        console.log("não se aplica");        
 }
 
 /*

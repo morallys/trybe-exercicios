@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+zsh
+explorer
+dolphin
+skills
+hard

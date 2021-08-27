@@ -7,3 +7,17 @@
 ---lucro = valorVenda - valorCustoTotal (lucro de um produto)
 */
 
+const valorCusto = 50;
+const valorVenda = 150;
+const impostoSobreOCusto = (valorCusto*0.20);
+
+const valorCustoTotal = valorCusto + impostoSobreOCusto;
+const lucro = valorVenda - valorCustoTotal;
+
+if(valorCusto < 0 || valorVenda < 0){   
+    console.error("Valores inválidos");
+
+}else{
+   console.log("Lucro ao vender 1000 unidades:", lucro*1000);
+
+}

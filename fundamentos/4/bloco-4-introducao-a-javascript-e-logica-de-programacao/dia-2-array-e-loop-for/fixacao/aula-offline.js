@@ -101,27 +101,3 @@ let feira = ["feijão", "arroz", "cuscuz", "carne", "legumes"];
     console.log("Itens da feira:", feira);
 
 */
-
-/*Exercício 1 --- Obtenha o valor "Serviços" do array menu :
-
-
-let menu = ["Home", "Serviços", "Portifólio", "Links"];
-let menuServices = menu.indexOf("Serviços");
-
-console.log(menuServices); */
-
-// Exercício 2 --- Procure o índice do valor "Portfólio" do array menu :
-/*
-let menu = ["Home", "Serviços", "Portfólio", "Links"];
-let indexOfPortfolio = menu.indexOf("Portfólio");
-
-console.log(indexOfPortfolio);*/
-
-//Exercício 3 --- Adicione o valor "Contato" no final do array menu :
-
-
-let menu = ["Home", "Serviços", "Portfólio", "Links"];
-
-menu.push("E-mail");
-
-console.log(menu);

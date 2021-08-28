@@ -33,7 +33,7 @@ Para pegar o valor do IR, temos um salário (já deduzido o INSS) entre R$ 1.903
 
 // Cria variáveis globais
 
-let salario = 3000;
+const salario = 1471.20;
 let inss = 0;
 let ir = 0;
 let salarioBase = 0;

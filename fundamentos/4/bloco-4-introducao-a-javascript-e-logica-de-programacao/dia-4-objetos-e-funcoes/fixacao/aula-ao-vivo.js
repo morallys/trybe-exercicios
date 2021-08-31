@@ -36,8 +36,16 @@ let person = {
 /**
  * ======== For In ========
  * 
- *      for ( let endereco in person){
- *          
+ * Para imprimir valores dos objetos, utilizando o for seguido do modelo abaixo: 
+ * 
+ *      for ( let key in person){
+ *          console.log(key); // Dessa forma, será impresso as chaves do objeto apenas, sem os valores contidos nele. 
+ *      }
+ * 
+ * Para imprimir os valores das chaves, seguir o modelo abaixo:
+ * 
+ *      for (let key in person) {
+ *          console.log(person[key]);  
  * 
  *      }
  */

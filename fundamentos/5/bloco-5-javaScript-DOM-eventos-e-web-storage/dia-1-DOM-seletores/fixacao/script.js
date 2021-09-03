@@ -2,11 +2,11 @@
 
 document.getElementById('teste2').innerText = 'Parágrafo alterado via script';*/
 
-document.getElementById("page-title").innerText = "Breaking bad";
+document.querySelector("#page-title").innerText = "Breaking bad";
 // let paragrafos = 
-document.getElementsByClassName("paragraphs")[0].style.backgroundColor = 'green';
+document.querySelectorAll(".paragraphs")[0].style.backgroundColor = 'green';
 // let segundoParagrafo = document.getElementById('second-paragraph');
-let subtitulo = document.getElementsByTagName('h4');
+let subtitulo = document.querySelector('h4');
 
 //paragrafos[0].
 
@@ -15,11 +15,14 @@ let subtitulo = document.getElementsByTagName('h4');
 // segundoParagrafo.style.color = 'green';
 document.body.style.color = 'white';
 document.body.style.backgroundColor = 'black';
-subtitulo[0].style.color = 'blue';
-subtitulo[0].style.textAlign = 'center';
+subtitulo.style.color = 'blue';
+subtitulo.style.textAlign = 'center';
 
 
 
+/**
+ * Para praticar, substitua todas as funções que você usou no exercício anterior por querySelector e/ou querySelectorAll .
+*/
 
 
 

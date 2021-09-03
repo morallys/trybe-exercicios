@@ -39,17 +39,17 @@
     
     8 - getElementByTagName
 
-        Para encontrar todas as tags com um certo nome que tem na página. Será retornado um array(HTML colection) com todas as tags, que podem ser acessadas por índice.
+        Para encontrar todas as tags com um certo nome que tem na página. Será retornado um array(HTML colection) com todas as tags, devem ser acessadas por índice.
  
     9 - getElementByClassName
 
-        Retornará todas as tags com um nome de class espefíca. Será retornado um conjunto (array) de elementos que possuem a mesma classe.
+        Retornará todas as tags com um nome de class espefíca. Será retornado um conjunto (HTMLColection/array) de elementos que possuem a mesma classe.
 
     10 - .querySelector
 
-        chamar a função retornar APENAS o primeiro elemento do documento. No entanto, pode-se especificar uma seção e pegar o primeiro elemento daquela seção.
+        A função retorna APENAS o primeiro elemento do documento. No entanto, pode-se especificar uma seção e pegar o primeiro elemento daquela seção.
 
-            Ex: document.querySelector('.nomeContainer.nomeClasse).style.color = 'red'
+            Ex: document.querySelector('.nomeContainer .nomeClasse).style.color = 'red'
 
             Nesse caso alteraria a cor do elemento que está no nomeContainer, dentro da nomeClasse.
 
@@ -66,7 +66,7 @@
 
 
             Ex:
-                document.getElementsByClassName("paragraphs")[0].style.backgroundColor = 'green';
+                document.getElementsByClassName("nomeClasse")[0].style.backgroundColor = 'green';
 
                 utiliza-se o índice do elemento que quer alterar, ou itera em um loop para alterar todos de uma vez.
 

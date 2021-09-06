@@ -4,7 +4,7 @@
         == location -> representa a localização do objeto a qual ele está associado, o documento atual;
         == document -> representa qualquer página da web carregada no navegador
         == history -> permite a manipulação do histórico da sessão do navegador
-        == element -> tags que estão em arquivos HTML e que se transforma em elementos da árvore DOM;
+        == element -> tags que estão em arquivos HTML e que se transformam em elementos da árvore DOM;
         == text -> todo texto da tag;
         == atribute -> conteúdo da tag
  *  
@@ -58,7 +58,7 @@
         
     =========== Voltando a aula off-line ==========    
 
-    12 - getElementByClassName
+    12 - getElementsByClassName
 
         realiza uma busca no documento a procura de uma classe com o nome solicitado, ao encontrar, retorna um valor em formato de lista [HTMLColection/array]
 
@@ -70,9 +70,9 @@
 
                 utiliza-se o índice do elemento que quer alterar, ou itera em um loop para alterar todos de uma vez.
 
-    13 - getElementByTagName
+    13 - getElementsByTagName
 
-        realiza a busca no documento a procura da tag específica e retorna uma lista de elementos [HTMLColection/array], mesmo que só tenha um retorno, sempre sera um retorno com formato de HTMLColection
+        realiza a busca no documento a procura da tag específica e retorna uma lista de elementos [HTMLColection/array], mesmo que só tenha um retorno, sempre será um retorno com formato de HTMLColection
 
         eficiente para recuperar e/ou alterar todos os elementos com uma mesma tag
 

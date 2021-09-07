@@ -21,12 +21,20 @@ colorBackgroundMainContent[0].style.backgroundColor = 'rgb(76,164,109)';
 
 let colorBackgroundCenterContent = document.getElementsByClassName('center-content');
 
+pText[0].innerText = "Me imagino trabalhando com programação em uma grande empresa.";
+
+const colorBackgroundMainContent = document.getElementsByClassName('main-content');
+
+colorBackgroundMainContent[0].style.backgroundColor = 'rgb(76,164,109)';
+
+const colorBackgroundCenterContent = document.getElementsByClassName('center-content');
+
 colorBackgroundCenterContent[0].style.backgroundColor = 'white';
 
 document.getElementsByClassName('title')[0].innerText = 'Exercício 5.1 - JavaScript';
 
-document.getElementsByTagName('p')[0].innerText.toUpperCase();
-//document.querySelector('.center-content p').innerText.toUpperCase();
+const document.getElementsByTagName('p')[0].innerText.toUpperCase();
+// document.querySelector('.center-content p').innerText.toUpperCase();
 
 for (const iterator of pText) {
   console.log(iterator);

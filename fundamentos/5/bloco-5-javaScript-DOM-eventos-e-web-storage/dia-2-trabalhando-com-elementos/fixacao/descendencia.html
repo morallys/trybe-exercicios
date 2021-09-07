@@ -1,0 +1,83 @@
+<main id="paiDoPai">
+    <section id="pai">
+      <section id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta"> <!-- segundoFilho -->
+        <section id="primeiroFilhoDoFilho"></section>
+        <section id="segundoUltimoFilhoDoFilho"></section>
+      </section>
+      Atenção!
+      <section id="terceiroFilho"></section>
+      <section id="quartoEUltimoFilho"></section>
+    </section>
+  </main>
+
+
+
+  
+
+  <!-- 
+
+            parentNode : retorna o nó pai.
+            parentElement : retorna o elemento pai.
+            childNodes : retorna um NodeList com todos os nós filhos.
+            children : retorna um HTMLCollection com todos os elementos filhos.
+            firstChild : retorna o primeiro nó filho.
+            firstElementChild : retorna o primeiro elemento filho.
+            lastChild : retorna o último nó filho.
+            lastElementChild : retorna o último elemento filho.
+            nextSibling : retorna o próximo nó.
+            nextElementSibling : retorna o próximo elemento.
+            previousSibling : retorna o nó anterior.
+            previousElementSibling : retorna o elemento anterior.
+
+
+
+   document.querySelector('#elementoOndeVoceEsta')
+
+
+    Exercicio Fixação vídeo 1
+        1 - Acesse o elemento elementoOndeVoceEsta .
+                
+            document.querySelector('#elementoOndeVoceEsta');
+        
+        2 - Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
+
+            document.querySelector('#elementoOndeVoceEsta').parentNode;
+        
+        3 - Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
+
+            document.querySelector("#primeiroFilhoDoFilho").innerText = 'Texto referente ao primeiro Filho do Filho'
+        
+        4 - Acesse o primeiroFilho a partir de pai .
+
+            document.querySelector('#pai').firstElementChild
+
+        5 - Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta .
+
+            document.querySelector('#elementoOndeVoceEsta').previousSibling.previousSibling
+
+        6 - Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta .
+
+            document.querySelector('#elementoOndeVoceEsta').nextSibling
+        
+        7 - Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta .
+
+            document.querySelector('#elementoOndeVoceEsta').nextElementSibling
+        
+        8 - Agora acesse o terceiroFilho a partir de pai .
+
+            document.querySelector('#pai').children[2]
+
+    Exercício de Fixação vídeo 2
+
+        1 - Crie um irmão para elementoOndeVoceEsta .
+
+            document.querySelector('#elementoOndeVoceEsta').parentNode.appendChildren = 'quintoFilho';
+
+        2 - Crie um filho para elementoOndeVoceEsta .
+        3 - Crie um filho para primeiroFilhoDoFilho .
+        4 - A partir desse filho criado, acesse terceiroFilho .
+
+    -->
+
+    

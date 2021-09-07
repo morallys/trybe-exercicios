@@ -13,7 +13,7 @@
 
 let pText = document.getElementsByTagName('p');
 
-pText[0].innerText = "Me imagino trabalhando com programação em uma grande empresa.";
+pText[0].innerText = 'Me imagino trabalhando com programação em uma grande empresa.';
 
 let colorBackgroundMainContent = document.getElementsByClassName('main-content');
 
@@ -25,9 +25,9 @@ colorBackgroundCenterContent[0].style.backgroundColor = 'white';
 
 document.getElementsByClassName('title')[0].innerText = 'Exercício 5.1 - JavaScript';
 
-//document.getElementsByTagName('p')[0].innerText.toUpperCase();
-document.querySelector('.center-content p').innerText.toUpperCase();
+document.getElementsByTagName('p')[0].innerText.toUpperCase();
+//document.querySelector('.center-content p').innerText.toUpperCase();
 
 for (const iterator of pText) {
-    console.log(iterator);
+  console.log(iterator);
 }

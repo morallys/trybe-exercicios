@@ -14,3 +14,9 @@ let element_section = document.createElement('section');
 let element_pai_section = document.querySelector('.main-content')
 element_section.className = 'center-content';
 element_pai_section.appendChild(element_section);
+
+// Requisito 4
+let element_p = document.createElement('p');
+let element_pai_section_p = document.querySelector('.center-content');
+element_p.innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugit saepe sint culpa velit ratione voluptate fuga beatae tempore. Quod quaerat nostrum, exercitationem numquam explicabo dolores laboriosam. Molestiae, et architecto?';
+element_pai_section_p.appendChild(element_p);

@@ -2,10 +2,6 @@ fundamentos/projeto-1/
 fundamentos/sd-016-b-live-lectures/
 Monitoria/node_modules
 .eslintrc.js
-        node_modules/
-        package-lock.json
-        package.json
-.eslintrc.js
 node_modules/
 package-lock.json
 package.json

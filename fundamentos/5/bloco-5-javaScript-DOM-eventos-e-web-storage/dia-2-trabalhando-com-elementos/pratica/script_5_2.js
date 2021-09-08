@@ -26,9 +26,15 @@ let element_left_content = document.createElement('section');
 element_left_content.className = 'left-content';
 element_pai_section.appendChild(element_left_content);
 
-// Requisito 5
+// Requisito 6
 let element_right_content = document.createElement('section');
 element_right_content.className = 'right-content';
 element_pai_section.appendChild(element_right_content);
 
+// Requisito 7
+let element_img_small_image = document.createElement('img');
+element_img_small_image.className = 'small-image';
+element_img_small_image.setAttribute('src', 'https://picsum.photos/200');
+let left_content_pai = document.querySelector('.left-content');
+left_content_pai.appendChild(element_img_small_image);
 

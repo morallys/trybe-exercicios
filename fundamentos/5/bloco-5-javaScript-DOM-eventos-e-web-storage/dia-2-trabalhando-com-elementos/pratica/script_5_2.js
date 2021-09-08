@@ -20,3 +20,8 @@ let element_p = document.createElement('p');
 let element_pai_section_p = document.querySelector('.center-content');
 element_p.innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugit saepe sint culpa velit ratione voluptate fuga beatae tempore. Quod quaerat nostrum, exercitationem numquam explicabo dolores laboriosam. Molestiae, et architecto?';
 element_pai_section_p.appendChild(element_p);
+
+// Requisito 5
+let element_left_content = document.createElement('section');
+element_left_content.className = 'left-content';
+element_pai_section.appendChild(element_left_content);

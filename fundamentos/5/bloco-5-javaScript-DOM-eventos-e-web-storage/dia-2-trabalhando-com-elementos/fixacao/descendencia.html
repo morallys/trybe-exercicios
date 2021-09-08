@@ -54,7 +54,7 @@
 
         5 - Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta .
 
-            document.querySelector('#elementoOndeVoceEsta').previousSibling.previousSibling
+            document.querySelector('#elementoOndeVoceEsta').previousElementSibling
 
         6 - Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta .
 
@@ -66,17 +66,91 @@
         
         8 - Agora acesse o terceiroFilho a partir de pai .
 
+            document.querySelector('#pai').lastElementChild.previousElementSibling
+            ou
             document.querySelector('#pai').children[2]
 
     Exercício de Fixação vídeo 2
 
         1 - Crie um irmão para elementoOndeVoceEsta .
+            // http://devfuria.com.br/javascript/dom-create-element/
 
-            document.querySelector('#elementoOndeVoceEsta').parentNode.appendChildren = 'quintoFilho';
+            // busco o pai
+            let elemento_pai = document.querySelector('#elementoOndeVoceEsta').parentNode;
+            // crio o elemento
+            let filho_do_pai = document.createElement('section')
+            // inserindo o elemento filho ao pai
+            elemento_pai.appendChild(filho_do_pai)
+            // alterando o nome da tag recém criada
+            document.querySelector('#pai').lastElementChild.id = 'quintoFilho'
 
         2 - Crie um filho para elementoOndeVoceEsta .
+
+        // busco o pai
+
+        let elemento_pai_OndeVoceEsta = document.querySelector('#elementoOndeVoceEsta')
+
+        // cria o filho
+
+        let filho_Onde_Voce_Esta = document.createElement('section')
+
+        // inserindo o filho ao pai
+
+        elemento_pai_OndeVoceEsta.appendChild(filho_Onde_Voce_Esta)
+
+        // alterando id da tag criada
+
+        document.querySelector('#elementoOndeVoceEsta').lastElementChild.id = 'terceiroFilhoDoFilho'
+
+
         3 - Crie um filho para primeiroFilhoDoFilho .
+
+        // busco o pai
+
+        let elemento_pai_filho_filho = document.getElementById('primeiroFilhoDoFilho')
+
+        // cria o filho
+
+        let elemento_Filho_do_pai_Filho_Filho = document.createElement('section')
+
+        // inserindo o filho ao pai
+
+        elemento_pai_filho_filho.appendChild(elemento_Filho_do_pai_Filho_Filho)
+
+        // alterando id da tag criada
+
+        document.querySelector('#primeiroFilhoDoFilho').lastElementChild.id = 'primeiroFilho_do_PrimeiroFilhoDoFilho'
+
         4 - A partir desse filho criado, acesse terceiroFilho .
+
+        document.querySelector('#primeiroFilho_do_PrimeiroFilhoDoFilho').parentNode.nextElementSibling.nextElementSibling
+
+
+        Exercício de Fixação vídeo 3
+
+        1 - Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho .
+
+        Remover:
+
+        primeiroFilho
+        primeiroFilho_do_primeiroFilhoDoFilho
+        segundoUltimoFilhoDoFilho
+        terceiroFilhoDoFilho
+        terceiroFilho
+        quartoEUltimoFIlho
+        quintoFilho
+
+        // Pra quando se conhece o pai, fazer os passos abaixo
+
+        // Cria uma variável com o pai de quem vai ser excluído
+        let pai_remove = document.querySelector('#primeiroFilhoDoFilho')
+
+        // Cria uma variável de quem será excluído
+
+        let filho_remove = document.getElementById('primeiroFilho_do_PrimeiroFilhoDoFilho')
+
+        // exclui o filho
+        pai_remove.removeChild(filho_remove)
 
     -->
 

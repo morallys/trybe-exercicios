@@ -25,3 +25,10 @@ element_pai_section_p.appendChild(element_p);
 let element_left_content = document.createElement('section');
 element_left_content.className = 'left-content';
 element_pai_section.appendChild(element_left_content);
+
+// Requisito 5
+let element_right_content = document.createElement('section');
+element_right_content.className = 'right-content';
+element_pai_section.appendChild(element_right_content);
+
+

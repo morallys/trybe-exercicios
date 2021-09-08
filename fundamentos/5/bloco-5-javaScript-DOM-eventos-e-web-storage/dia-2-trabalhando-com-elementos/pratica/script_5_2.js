@@ -38,3 +38,31 @@ element_img_small_image.setAttribute('src', 'https://picsum.photos/200');
 let left_content_pai = document.querySelector('.left-content');
 left_content_pai.appendChild(element_img_small_image);
 
+// Requisito 8
+let element_list_unOrder = document.createElement('ul');
+let right_content_pai = document.querySelector('.right_content');
+right_content_pai.appendChild(element_list_unOrder);
+
+const numbers = [
+  'um',
+  'dois',
+  'três',
+  'quatro',
+  'cinco',
+  'seis',
+  'sete',
+  'oito',
+  'nove',
+  'dez'
+];
+
+let list_ul_local = document.querySelector('.right_content ul')
+
+for (const iterator of numbers) {
+  let numberFull = numbers[index];
+
+  let element_list_li = document.createElement['li'];
+  element_list_li.innerText = numberFull;
+
+  list_ul_local.appendChild(element_list_li);
+}

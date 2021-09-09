@@ -39,6 +39,7 @@ let left_content_pai = document.querySelector('.left-content');
 left_content_pai.appendChild(element_img_small_image);
 
 // Requisito 8
+
 let element_list_unOrder = document.createElement('ul');
 element_right_content.appendChild(element_list_unOrder);
 
@@ -55,13 +56,13 @@ const numbers = [
   'dez'
 ]
 
-// let list_ul_local = document.querySelector('.right-content ul');
+let list_ul_local = document.querySelector('.right-content ul');
 
-for (const iterator of numbers) {
-  let numberFull = iterator;
+for (let index = 0; index < numbers.length; index += 1) {
+  let numberFull = numbers[index];
 
-  let element_list_li = document.createElement['li'];
-  element_list_li.innerText = numberFull;
+  let element_li = document.createElement('li');
+  element_li.innerText = numberFull;
 
-  element_list_unOrder.appendChild(element_list_li);
+  element_list_unOrder.appendChild(element_li);
 }

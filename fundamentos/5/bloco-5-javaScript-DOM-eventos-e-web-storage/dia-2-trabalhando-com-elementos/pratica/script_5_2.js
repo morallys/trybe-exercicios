@@ -91,3 +91,14 @@ let changeClasseNameH3 = document.getElementsByTagName('h3');
 for (let key in changeClasseNameH3) {
   changeClasseNameH3[key].className = 'description';  
 }
+
+// Requisito 3 - bônus
+
+// Deleta filho do left-content
+let deleteChildOfChild = document.querySelector('.small-image');
+element_left_content.removeChild(deleteChildOfChild);
+
+// Deleta filho de Main
+let deleteChild = document.querySelector('.left-content');
+element_main.removeChild(deleteChild);
+

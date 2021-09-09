@@ -11,9 +11,8 @@ document.body.appendChild(element_main);
 
 // Requisito 3
 let element_section = document.createElement('section');
-let element_pai_section = document.querySelector('.main-content')
 element_section.className = 'center-content';
-element_pai_section.appendChild(element_section);
+element_main.appendChild(element_section);
 
 // Requisito 4
 let element_p = document.createElement('p');
@@ -24,12 +23,12 @@ element_pai_section_p.appendChild(element_p);
 // Requisito 5
 let element_left_content = document.createElement('section');
 element_left_content.className = 'left-content';
-element_pai_section.appendChild(element_left_content);
+element_main.appendChild(element_left_content);
 
 // Requisito 6
 let element_right_content = document.createElement('section');
 element_right_content.className = 'right-content';
-element_pai_section.appendChild(element_right_content);
+element_main.appendChild(element_right_content);
 
 // Requisito 7
 let element_img_small_image = document.createElement('img');
@@ -100,3 +99,8 @@ element_main.removeChild(deleteChild);
 // Requisito 4 - bônus
 
 element_right_content.style.marginRight = 'auto';
+
+// Requisito 5 - bônus
+
+element_main.style.backgroundColor = 'green';
+

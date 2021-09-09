@@ -5,12 +5,31 @@ const input = document.getElementById('input');
 const myWebpage = document.getElementById('my-spotrybefy');
 
 // Requisito 2
-window.onload = userInput.addEventListener('data', function () {
+window.onload = function (){
 
-  let userInput = document.getElementById('data');
-  let inputText = userInput.innerText;
+  let userInput = document.getElementById('input');
 
-  let textClassTech = document.querySelector('.tech');
-  textClassTech = userInput;
+  
 
-})
+  userInput.addEventListener('keyup', function () {  
+    
+    let inputText = userInput.value;      
+    let textClassTech = document.querySelector('.tech');
+
+    textClassTech.innerText = inputText;    
+  
+  })  
+}
+
+
+
+/*
+
+const inputTexto = document.querySelector("#input-texto");
+const divQuadrado = document.querySelector(".quadrado");
+
+function corQuadrado() {
+  divQuadrado.style.backgroundColor = inputTexto.value;
+}
+
+inputTexto.addEventListener("change", corQuadrado);*/

@@ -77,3 +77,9 @@ function createInsertH3 () {
 for (let index = 0; index < 3; index += 1) {
   createInsertH3();
 }
+
+// =========================BÔNUS=========================
+
+// Requisito 1 - bônus
+
+element_h1.className = 'title';

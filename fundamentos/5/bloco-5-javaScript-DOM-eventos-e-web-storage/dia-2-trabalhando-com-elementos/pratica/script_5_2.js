@@ -66,3 +66,14 @@ for (let index = 0; index < numbers.length; index += 1) {
 
   element_list_unOrder.appendChild(element_li);
 }
+
+// Requisito 9
+
+function createInsertH3 () {
+  let element_h3 = document.createElement('h3');
+  element_main.appendChild(element_h3);
+}
+
+for (let index = 0; index < 3; index += 1) {
+  createInsertH3();
+}

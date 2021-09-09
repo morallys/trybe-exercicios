@@ -83,3 +83,11 @@ for (let index = 0; index < 3; index += 1) {
 // Requisito 1 - bônus
 
 element_h1.className = 'title';
+
+// Requisito 2 - bônus
+
+let changeClasseNameH3 = document.getElementsByTagName('h3');
+
+for (let key in changeClasseNameH3) {
+  changeClasseNameH3[key].className = 'description';  
+}

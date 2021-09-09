@@ -97,3 +97,6 @@ for (let key in changeClasseNameH3) {
 let deleteChild = document.querySelector('.left-content');
 element_main.removeChild(deleteChild);
 
+// Requisito 4 - bônus
+
+element_right_content.style.marginRight = 'auto';

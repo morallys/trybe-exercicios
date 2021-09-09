@@ -55,8 +55,6 @@ const numbers = [
   'dez'
 ]
 
-let list_ul_local = document.querySelector('.right-content ul');
-
 for (let index = 0; index < numbers.length; index += 1) {
   let numberFull = numbers[index];
 
@@ -103,4 +101,21 @@ element_right_content.style.marginRight = 'auto';
 // Requisito 5 - bônus
 
 element_main.style.backgroundColor = 'green';
+
+// Requisito 6 - bônus
+
+let list_li = document.getElementsByTagName('li');
+
+function removeChildLi(numberDelete) {
+
+  for (let index = 0; index < list_li.length; index += 1) {
+    
+    if (list_li[index].innerText === numberDelete || list_li[index].innerText === numberDelete) {
+      element_list_unOrder.removeChild(list_li[index]);
+    }    
+  }  
+}
+
+removeChildLi('nove');
+removeChildLi('dez');
 

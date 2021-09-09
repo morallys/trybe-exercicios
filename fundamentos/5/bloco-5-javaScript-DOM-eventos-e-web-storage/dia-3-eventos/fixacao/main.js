@@ -4,12 +4,10 @@ const thirdLi = document.getElementById('third-li');
 const input = document.getElementById('input');
 const myWebpage = document.getElementById('my-spotrybefy');
 
-// Requisito 2
+// Requisito 3
 window.onload = function (){
 
-  let userInput = document.getElementById('input');
-
-  
+  let userInput = document.getElementById('input');  
 
   userInput.addEventListener('keyup', function () {  
     
@@ -19,17 +17,32 @@ window.onload = function (){
     textClassTech.innerText = inputText;    
   
   })  
+
+  // Requisito 4
+  let eventosClickColor_H3 = document.getElementById('my-spotrybefy');
+
+  eventosClickColor_H3.addEventListener('dblclick', function () {    
+    window.open(
+      'https://morallys.github.io/',
+      '_blank'
+    )
+
+      /**
+       * Encontrei várias formas de se fazer esse exercício mas não pra abrir em outra aba
+       * window.location.href = 'https://site';
+       * location.assing('https://site');
+       */
+
+  })
+
+  // Requisito 5
+
+  eventosClickColor_H3.addEventListener('mouseover', function () {
+    eventosClickColor_H3.style.color = 'purple';    
+  })
+
+  eventosClickColor_H3.addEventListener('mouseleave', function () {
+    eventosClickColor_H3.style.color = 'white';    
+  })
+  
 }
-
-
-
-/*
-
-const inputTexto = document.querySelector("#input-texto");
-const divQuadrado = document.querySelector(".quadrado");
-
-function corQuadrado() {
-  divQuadrado.style.backgroundColor = inputTexto.value;
-}
-
-inputTexto.addEventListener("change", corQuadrado);*/

@@ -19,11 +19,20 @@ Vídeo 1 - O que são eventos em JavaScript?
 
         ex: <button onclick="exemplo();"> Mais informações</button>
 
-        - Aliás não é recomendado esse uso diretamente no HTML.
+        OBS: Não é recomendado esse uso diretamente no HTML.
 
 Vídeo 2 - addEventListener
 
+    - Permite adicionar 'escutadores' de forma mais flexível
+    - Código JavaScript somente na parte JavaScript.
 
+        Alguns tipos de eventos:
+
+            - click, dblclick, mouseover, mouseleave,
+             change, scroll, keydown
+             Documentação sobre eventos:
+             
+             https://www.w3schools.com/jsref/dom_obj_event.asp
 
 ================= Aula ao vivo ==================
 

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles.css">
+  <title>Formulário</title>
+</head>
+<body>
+  <header>
+    <h1>FORMULÁRIO</h1>
+  </header>
+  <form action="#" method="get">
+    <div>
+      <fieldset>
+        <div>
+          <label for="input-name">Name
+            <input type="text" name="name" id="input-text" maxlength="40" class="form-control" required autofocus>
+          </label>
+        </div>
+        <div >
+          <label for="input-email">E-mail
+            <input type="email" name="email" id="input-email" maxlength="50" class="form-control" required>
+          </label>
+        </div>
+        <div >
+          <label for="input-cpf">CPF
+            <input type="text" name="cpf" id="input-cpf" maxlength="11" class="form-control" required>
+          </label>
+        </div>
+        <div >
+          <label for="input-adress">Endereço
+            <input type="text" name="endereco" id="input-adress" maxlength="200"required>
+          </label>
+        </div>
+        <div >          
+          <label for="input-estado">Estado</label>
+            <select name="estado" id="select-group" required> 
+  
+            </select>          
+        </div>
+        <div >
+          <label for="input-cidade">Cidade
+            <input type="text" name="cidade" id="input-cidade" maxlength="28" required>
+          </label>
+        </div>
+        <div>
+          <input type="radio" name="imovel" id="input-imovel" required>
+          <label for="input-imovel-1">Casa</label>
+        </div>
+        <div>
+          <input type="radio" name="imovel" id="input-imovel" required>
+          <label for="input-imovel-2">Apartamento</label>
+        </div>
+      </fieldset>
+    </div>
+    <br>
+    <div>
+      <fieldset>
+        <div>
+          <label for="resumo">Resumo do currículo</label>
+            <textarea name="resumo" id="input-textArea" cols="30" rows="10" maxlength="1000" required></textarea>
+        </div>
+
+        <div >
+          <label for="input-name">Cargo
+            <input type="text" name="name_cargo" id="input-cargo" maxlength="40" required>
+          </label>
+        </div>
+        <div >
+          <label for="input-name">Descrição do cargo
+            <input type="text" name="descricao_cargo" id="input-descrição" maxlength="500" required >
+          </label>
+        </div>
+        <div >
+          <label for="input-name">Data de início
+            <input type="text" name="inicio" id="input-data-inicio" placeholder="dd/mm/aaaa" maxlength="10" required >
+          </label>
+        </div>   
+      </fieldset>
+      <div>
+        <button type="submit" id="btn-enviar">Enviar</button>
+        <button type="reset" id="btn-limpar">Limpar</button>
+      </div>
+    </div>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>

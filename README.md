@@ -59,17 +59,17 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 7: JavaScript ES6 & Testes Unitários
 
 - :heavy_check_mark: 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
-- [ ] 7-2: _JavaScript ES6 - Objects_
-- [ ] 7-3: _Testes unitários em JavaScript_
-- [ ] 7-4: _[Projeto - JavaScript Testes Unitários]()_
+- :heavy_check_mark: 6-6: 7-2: _JavaScript ES6 - Objects_
+- :heavy_check_mark: 6-6: 7-3: _Testes unitários em JavaScript_
+- :heavy_check_mark: 6-6: 7-4: _[Projeto - JavaScript Testes Unitários](https://github.com/tryber/sd-016-b-project-js-unit-tests/pull/69)_
 
 ##### Bloco 8: JavaScript ES6
 
-- [ ] 8-1: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
-- [ ] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
-- [ ] 8-3: _JavaScript ES6 - Higher Order Functions - reduce_
-- [ ] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
-- [ ] 8-5: _[Projeto - Zoo functions]()_
+- :heavy_check_mark: 6-6: 8-1: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
+- :heavy_check_mark: 6-6: 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
+- :heavy_check_mark: 6-6: 8-3: _JavaScript ES6 - Higher Order Functions - reduce_
+- :heavy_check_mark: 6-6: 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
+- :heavy_check_mark: 6-6: 8-5: _[Projeto - Zoo functions](https://github.com/tryber/sd-016-b-project-zoo-functions/pull/12)_
 
 ##### Bloco 9: Assincronicidade & Callbacks
 

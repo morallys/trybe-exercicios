@@ -37,7 +37,7 @@ const books = [
     genre: 'Ficção Científica',
     author: {
       name: 'Frank Herbert',
-      birthYear: 1921,
+      birthYear: 1920,
     },
     releaseYear: 1965,
   },
@@ -65,20 +65,27 @@ const books = [
 
 const expectedResult = false;
 
+// Com dois forEach
+
 const authorUnique = () => {
   let result = true;
   books.forEach((book1) => {
     books.forEach((book2) => {
-      if (book1.author.birthYear === book2.author.birthYear) {
-        if (book1.author.name !== book2.author.name) {
+      if (book1.author.birthYear === book2.author.birthYear && book1.author.name !== book2.author.name) {
           result = false;
-        }
       }
     });
   });
   return result;
 }
 
+// Com dois some() resulução de colega no Slack, onde eu inseri a segunda parte da checagem.
+
+function authorUnique() {
+  return !books.some((a) => books.some((b) => (b.author.birthYear === a.author.birthYear && b.author.name !== a.author.name)));
+}
+
+
 console.log(authorUnique());
 
-// assert.strictEqual(authorUnique(), expectedResult);
+assert.strictEqual(authorUnique(), expectedResult);

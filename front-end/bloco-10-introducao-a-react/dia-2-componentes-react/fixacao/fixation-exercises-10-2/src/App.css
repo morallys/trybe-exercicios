@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-/* .App-logo {
+.App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,21 +35,4 @@
   to {
     transform: rotate(360deg);
   }
-} */
-
-.components {
-  display: flex;
-  flex-direction: row;
-}
-
-.header {
-  border: 1px solid black;
-  background-color: greenyellow;
-}
-.content {
-  border: 1px solid black;
-}
-.footer {
-  background-color: coral;
-  border: 1px solid black;
 }

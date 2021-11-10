@@ -14,18 +14,20 @@ class App extends Component {
     }
   }
 
-  btnClass (whichBtn) {
+  btnClass (event) {
+    const { name } = event.target;
+
     this.setState((estadoAnterior, _props) => ({
-      [`clicksBtn${whichBtn}`]: estadoAnterior[`clicksBtn${whichBtn}`] + 1
+      [name]: estadoAnterior[name] + 1
     }))
   }
 
   render() {
     return (
       <>
-        <button id='btn1' onClick={() => this.btnClass('1')}>{this.state.clicksBtn1}</button>
-        <button id='btn2' onClick={() => this.btnClass('2')}>{this.state.clicksBtn2}</button>
-        <button id='btn3' onClick={() => this.btnClass('3')}>{this.state.clicksBtn3}</button>
+        <button id='btn1' name='clicksBtn1' onClick={this.btnClass}>{this.state.clicksBtn1}</button>
+        <button id='btn2' name='clicksBtn2' onClick={this.btnClass}>{this.state.clicksBtn2}</button>
+        <button id='btn3' name='clicksBtn3' onClick={this.btnClass}>{this.state.clicksBtn3}</button>
       </>
     )}
 }

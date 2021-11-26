@@ -96,16 +96,16 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - :heavy_check_mark: 12-1: _Ciclo de vida de componentes em React_
 - :heavy_check_mark: 12-2: _React Router_
-- [ ] 12-3: _[Projeto - TrybeTunes]()_
+- :heavy_check_mark: 12-3: _[Projeto - TrybeTunes](https://github.com/tryber/sd-016-b-project-trybetunes/pull/18)_
 
 ##### Bloco 13: Metodologias Ágeis
 
-- [ ] 13-1: _Metodologias Ágeis_
-- [ ] 13-2: _[Projeto - Frontend Online Store]()_
+- :heavy_check_mark: 13-1: _Metodologias Ágeis_
+- :heavy_check_mark: 13-2: _[Projeto - Frontend Online Store](https://github.com/tryber/sd-016-b-project-frontend-online-store/pull/25)_
 
 ##### Bloco 14: Testes em React
 
-- [ ] 14-1: _Testando React com a React Testing Library_
+- :heavy_check_mark: 14-1: _Testando React com a React Testing Library_
 - [ ] 14-2: _Testando React com a React Testing Library - Parte 2_
 - [ ] 14-3: _[Projeto - Testes em React]()_
 

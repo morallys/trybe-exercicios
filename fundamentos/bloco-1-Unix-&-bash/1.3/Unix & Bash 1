@@ -1,0 +1,118 @@
+Vídeo 1
+
+- Desenvolvido por Thompsom e Ritchie
+- Desenvolvido em C 
+- Suporte a multiusuários
+- Multi tarefas, permitindo utilizar vários aplicativos aplicativos
+    mesmo tempo
+- SO baseado em Unix, linux e MacOS
+- Dividido em 3 níveis
+    -- kernel (começando a funcionar assim que a máquina é ligada)
+    -- Shell (interface entre o SO, kernel e o usuário) geralmente utilizado 
+        Função do SHELL->>
+    em interface de linha de comando
+        --- Principais tipos de Shell: SH, BASH, CSH, TCSH, ZSH  
+    -- Aplicativos
+        --- Softwares que os usuários podem utilizar e os comandos do Unix 
+- Processos e arquivos
+    -- Toda vez que é executada um comando ou uma tarefa, é interpretado como um Processo
+    -- PID = process identify
+        Carregando algumas informações como:
+            usuário proprietario
+            sessão do Shell
+            estado atual
+            linha de comando utilizada, etc
+    -- Arquivos
+        Tudo é um arquivo, diretório, arquivos, e dispositivos.
+        Possui data e hora, tipo do arquivo, nome, nome do proprietário, tamanho
+Vídeo 2
+
+    Listando comandos do bash:
+        - ls -> mostrar arquivos e subdiretórios que estão no diretório
+        - ls -a ->  mostra também os arquivos e subdiretórios ocultos
+        - cd -> para acessar diretório (change directory)
+            - cd . -> referencia o próprio diretório
+            - cd .. -> retorna para o diretório pai
+
+            Ex: cd /home/morallys/Trybe
+
+        - mkdir -> para criar diretórios (make directory)
+        - pwd -> mostra o caminho completo        
+
+Vídeo 3
+
+    Operações com diretórios e arquivos:
+        
+        - cp -> fazendo cópia de arquivo. 
+
+            Ex: cp arquivo.txt arquivo2.txt (para criar no mesmo diretório)
+                para enviar para outro diretório, no segundo argumento inserir o caminho respectivo.
+        - cat -> para abrir ou alterar um arquivo.
+
+            Ex: cat arquivo.txt (para abrir um arquivo)
+
+                cat > arquivo.txt (para alterar um arquivo vazio ou substituir o conteúdo do arquivo)
+
+                cat >> arquivo.txt (para incluir informações no arquivo)
+
+        - mv -> para mover ou alterar nome de um arquivo
+
+                Ex: mv arquivo.txt ~/Trybe/Fundamentos/1/1.4 (Mover     arquivos de um local para outro)
+
+                    mv arquivo.txt arquivo2.txt (altero no nome do arquivo quando não coloco um caminho diferente do atual)
+
+        - rm -> remover um arquivo
+        - rmdir -> para excluir diretórios (remove directory)
+        - rm -rf -> para forçar a exclusão definita de um arquivo
+
+
+Vídeo 4
+    - Comandos úteis
+        -- cat: verificar conteúdo do arquivo no próprio terminal
+        -- less: mostrar conteúdo do arquido por página. Pra passar de página ESPAÇO. Sair Q.
+
+                    ex: less exemplo.txt
+
+            --- Também dá pra procurar termos com esse comando, ao entrar no arquivo de exibição, digitar / e depois a palavra para procurar esse termo dentro do arquivo. Pra passar para próximo termo, digitar N.
+
+                ex: less exemplo.txt
+
+        -- head: verificar primeiras 10 linhas do arquivo. Variações: -5: primeiras 5 linhas
+        -- tail: verificar últimas 10 linhas do arquivo. Variações: -5: últimas 5 linhas
+        -- grep: encontra texto dentro de arquivos. Case sensitive
+            Variações:
+            -i: sem case sensitive, texto específico entre aspas simples ''
+            -iv: sem case sensitive, procurar todos os termos que não correspondem ao texto digitado.
+            -in: sem case sensitive, encontrar a linha específica do texto digitado na procura
+            -ic: sem case sensitive, texto específico, quantidade de vezes que apareceu
+
+                Ex: grep -i toy filmes.txt
+                    grep -iv 'O poderoso' filmes.txt
+                    grep -in 'O poderoso' filmes.txt
+                    grep -ic 'toy' filmes.txt
+
+        -- wc: quantidade de linhas, palavras e caracteres que o arquivo possui, respectivamente
+
+                            LINHA PALAVRAS CARACTERES
+
+            Variações:
+            -w: quantidade de palavras
+            -l: quantidade de linhas
+            -c: quantidade de caracteres
+
+Vídeo 5
+    - Ajuda no terminal
+        -- No comando ls, existem algumas variações que podem ajudar o usuário a procurar arquivos
+            ls *: busca tudo, inclusive dentro dos subdiretórios
+            -- Quando não sabemos o nome exato no diretório, pode-se inserir uma interrogação para busca
+            ls ?rybe: para buscar o diretório TRYBE, por exemplo.
+            man: manual de qualquer comando. Ex: man ls
+            whatis: o que o comando faz
+            apropos: mostra comandos parecidos com o comando pesquisado. Ex: procurei por cp, ele mostra
+                    comandos que fazem cópia ou coisa parecida.
+
+
+
+
+
+lista todos os arquivos e subdiretórios do diretório atual, mas nesses nesses todos que você está perguntando seria para estar incluído os ocultos?

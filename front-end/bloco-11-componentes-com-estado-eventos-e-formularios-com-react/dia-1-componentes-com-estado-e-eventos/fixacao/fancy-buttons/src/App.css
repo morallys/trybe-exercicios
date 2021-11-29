@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+}
+
+button {
+  width: 120px;
+  height: 80px;
+  margin: 20px;
+  font-size: 30px;
+  border-radius: 10px;
+}
+
+#btn1 {
+  background-color: greenyellow;
+}
+
+#btn2 {
+  background-color: blueviolet;
+}
+
+#btn3 {
+  background-color: coral;
+}

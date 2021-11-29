@@ -1,0 +1,7 @@
+stackedit.io -> para criar um texto de markdown.
+
+github cheatsheets
+
+git remote -v [informações sobre o repositório remoto, onde o repositório está conectado]
+
+git checkout -b (nome branch sem aspas) - cria uma branch e já muda para ela

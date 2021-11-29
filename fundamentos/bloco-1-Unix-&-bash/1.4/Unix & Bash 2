@@ -1,0 +1,167 @@
+Vídeo 1
+    - Comando cat seguido de enter fica aguardando o texto do usuário e é mostrado na tela
+    - Para criar um documento com o comando cat, seguir o seguinte exemplo:
+        cat > nomeArquivo.txt
+            Exemplo de texto
+
+    - Para acrescentar valores no arquivo criado:
+        cat >> nomeArquivo.txt
+            Exemplo de texto
+            Novo Exemplo de texto
+
+    - Para unir dois arquivos  em um terceiro com o comando cat:
+        cat exemplo1.txt exemplo2.txt > doisTextos.txt
+
+    - Para ordenar os valores do arquivo criado apenas para a saída (output): APENAS NA SAÍDA E NÃO DEFINITIVO o operador < (menor).
+
+        sort < exemplo1.txt
+
+    - Para ordenar de forma definitiva e ser enviado para um outro arquivo:
+
+        sort < exemplo1.txt > exemploOrdenado.txt
+    - Comando para saber quais sãos os usuários e suas permissões utilizando o sistema:
+        who
+
+Vídeo 2
+    - Comando ls -l mostra uma série de outras informações dos arquivos e diretórios, como por exemplo: permissões, usuários, tamanho, data e local
+
+    - Permissões de arquivos e/ou diretórios
+        exemplo de permissões mostradas:
+        drwxr-xt-x+
+        -rw-r--r--
+
+        --- Quando começar com 'd', isso é um diretório
+        --- Quando começar com '-', isso é um arquivo
+
+        r(read) = permitida a leitura
+        w(writer) = permitida a escrita
+        x(execute) = permitida a execução do arquivo
+
+        São separados em 4 grupos:
+
+        - rw- r-- r--
+
+        - ou d = arquivo ou diretório
+        rw- = acões para o usuário
+        r-- = grupo de usuário
+        r-- = outros usuários que não fazem parte do mesmo grupo
+
+
+    Alterar permissões do arquivo
+        u = user
+        g = group
+        o = other
+        a = all
+
+        para acrescentar permissão = +
+        para remover permissão = -
+
+        exemplo1: chmod u-rw arquivo.txt
+
+        Nesse exemplo foi removida a permissão do usuário de ler e escrever no arquivo.
+
+        exemplo2: chmod u+rw arquivo.txt
+
+        Nesse exemplo foi adicionada a permissão do usuário de ler e escrever no arquivo.
+
+    jobs
+        comando 'ps' utilizado para verificar os processos ativos (parecido com o htop)
+        ---sleep (contador) + o tempo em segundos
+        - Caso queira colocar o processo background, utilizar o &.
+        - Caso não tenha colocado em background e precise utilizar o terminal apertar a combinação ctrl+z, para suspender
+        - Caso queira puxar novamente o processo, utilizar o comando bg (background)
+        
+        - comando 'jobs' é utilizado para verificar especificamente os jobs
+
+        - Para matar um processo: ctrl+C
+
+        - fg (foreground) - para executar um comando que foi suspenso. Verificar o número do processo e utilizar o comando da seguinte maneira:
+
+            fg %1 = para trazer o primeiro processo a vida novamente
+
+        - kill
+            Comando utilizado para matar processos.
+            Ex:
+
+                kill %1 ou kill 7188 (PID = process identify)
+            
+            Para forçar um processo que não está sendo 'morto', utilizar o kill da seguinte forma (-9):
+
+                kill -9 7188 (PID)
+
+    find
+        --- é um comando para pesquisar em diretórios por arquivos ou pastas.
+            Parâmetros:
+                name, date, size, type
+
+                ex:
+                    find . -name "*.txt" (busca todos os arquivos .txt dentro do diretório atual)
+                    find . -type d (busca diretórios/pastas dentro do diretório atual)
+                    find . -type f (busca por arquivos dentro do diretório atual)
+
+        --- Localizar arquivos e diretórios que comecem por um trecho específico
+
+                ex:
+                    find ./teste -name "exemplo*"
+
+    History
+        --- Verificar os comandos digitados no terminal.
+        Também pode ser combinado para buscar o início com o 'head' e o final com o 'tail'.
+
+        Pode ser colocado também dentro de um arquivo:
+
+            history | head -50 > historico-50-primeiros.txt
+
+    echo
+        --- emite na tela o resultado do que foi escrito pelo usuário após o enter.
+
+            ex:
+                echo "este é um teste"
+
+        Podendo também ser inserida a saída do comando para um arquivo:
+
+                echo "este é um teste" > arquivoEcho.txt
+
+Aula ao vivo
+    - Explicações sobre o comando
+
+        echo
+        --- Comando mostra uma saída que foi colocada entre '' dentro do terminal. No entanto, também podemos redirecionar a saída para um arquivo criado desta forma:
+            echo 'texto exemplo' > arquivoTeste.txt
+
+        cat 
+        --- Comando pode ser usado tanto para visualizar o texto de arquivos, mas também para criar arquivos com texto definido após teclar enter.
+            cat > arquivoTeste.txt
+
+            Teste de texto para o arquivo.
+            Teste de texto para o arquivo.
+
+        Finalizando com ctrl+D e salvar o arquivo.
+
+        Nos dois comandos pode-se apenas inserir texto ou incrementar.
+
+        Para adicionar arquivo e apagar tudo que está dentro ou criar do zero: 
+            cat ou echo '>' exemplo.txt
+
+        Para incrementar arquivo que já possui texto:
+            cat ou echo '>>' exemplo.txt
+    
+        sort 
+        --- comando é utilizado para ordenar palavras dentro do arquivo 
+
+        find
+        --- procura arquivos e diretórios
+
+            pra procurar em diretório específico, inserir o path, ou se quiser buscar no diretório que estou fazer dessa forma:
+                find .
+
+        jobs
+        --- verifica os trabalhos que foram iniciados e inserido o & para que o terminal não ficasse ocupado.
+
+        ---fg = foreground -> Para puxar o jobs que estava em funcinamento 
+        ---bg = background
+
+        sleep 
+        --- temporizador indicado em segundos. Um jobs que o terminal vai me informar quando finalizar o tempo.
+            sleep 10 & (& = para rodar em background)
+            sleep 10 (assim o terminal ficaria travado)

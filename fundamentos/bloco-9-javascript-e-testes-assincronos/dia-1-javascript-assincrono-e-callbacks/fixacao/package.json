@@ -1,0 +1,12 @@
+{
+  "name": "fixacao",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1-exemplo-exercicio-operacoes-assincronas.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

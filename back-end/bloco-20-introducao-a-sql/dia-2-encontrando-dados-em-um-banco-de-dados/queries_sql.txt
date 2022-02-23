@@ -1,0 +1,64 @@
+USE sakila
+
+-- SELECT CONCAT(first_name, ' ', last_name) FROM actor;
+
+-- SELECT CONCAT(title, ' - ', release_year) AS 'Lançamento do Filme' FROM film;
+
+-- SELECT CONCAT(title, ' - ', rating) AS Classificação FROM film;
+
+-- SELECT CONCAT(`address`, address2, ', ', district) AS Endereço FROM address;
+
+-- SELECT first_name, last_name FROM actor;
+
+-- CREATE DATABASE `Escola`;
+-- USE Escola;
+-- CREATE TABLE IF NOT EXISTS Escola.Alunos(
+--   `Nome` VARCHAR(7) CHARACTER SET utf8,
+--   `Idade` INT
+-- );
+
+-- INSERT INTO Escola.Alunos VALUES
+--   ('Rafael', 25),
+--   ('Amanda', 30),
+--   ('Roberto', 45),
+--   ('Carol', 19),
+--   ('Amanda', 25);
+
+-- SELECT DISTINCT Nome, Idade FROM Alunos;
+-- SELECT DISTINCT Idade FROM Alunos;
+
+USE sakila;
+
+-- SELECT COUNT(email) FROM staff;
+-- SELECT COUNT(*) FROM rental;
+-- SELECT * FROM rental LIMIT 10;
+-- SELECT * FROM actor LIMIT 10 OFFSET 4;
+-- SELECT * FROM address
+--   ORDER BY address, district;
+
+
+------------------------------------ Utiliza a tabela film
+SELECT * FROM film;
+
+SELECT title, release_year, rating FROM film;
+
+SELECT COUNT(*) FROM film;
+
+------------------------------------- Utiliza a tabela actor
+SELECT DISTINCT last_name FROM actor;
+SELECT COUNT(DISTINCT last_name) FROM actor;
+
+SELECT first_name,  last_name FROM actor
+  ORDER BY first_name DESC, last_name;
+
+-------------------------------------- Utiliza a tabela language
+
+SELECT * FROM `language`
+  WHERE `name` != 'English';
+
+SELECT * FROM language;
+
+SELECT * FROM film;
+
+SELECT title, release_year, `length`, replacement_cost FROM film
+  ORDER BY `length`, replacement_cost;

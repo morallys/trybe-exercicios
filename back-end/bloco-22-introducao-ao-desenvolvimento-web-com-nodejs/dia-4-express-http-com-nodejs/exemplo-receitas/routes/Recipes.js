@@ -91,8 +91,6 @@ router.put('/recipes/:id', function (req, res) {
   const { name, price, waitTime } = req.body;
   const { recipes } = data;
 
-  console.log(name, price, waitTime);
-
   const recipeIndex = recipes.findIndex((r) => r.id === parseInt(id));
 
   if (recipeIndex === -1)
@@ -124,6 +122,7 @@ module.exports = router;
 //     Accept: 'application/json',
 //     'Content-Type': 'application/json',
 //   },
+
 //   body: JSON.stringify({
 //     id: 4,
 //     name: 'Macarrão com Frango',

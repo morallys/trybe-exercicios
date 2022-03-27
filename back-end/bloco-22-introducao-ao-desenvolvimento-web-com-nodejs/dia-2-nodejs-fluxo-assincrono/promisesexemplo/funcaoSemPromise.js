@@ -7,7 +7,7 @@ const calcularDivisao = (num1, num2) => {
 }
 
 try {
-  const resultado = calcularDivisao(6, 0);
+  const resultado = calcularDivisao(6, 2);
 
   console.log("resultado: %s", resultado);
 

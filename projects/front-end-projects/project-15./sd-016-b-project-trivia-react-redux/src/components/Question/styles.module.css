@@ -1,0 +1,16 @@
+.questionContainer {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 6px;
+  display: flex;
+  height: 20rem;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.questionContainer h2 {
+  color: black;
+  font-size: 2rem;
+  inline-size: 100%;
+  overflow-wrap: break-word;
+}

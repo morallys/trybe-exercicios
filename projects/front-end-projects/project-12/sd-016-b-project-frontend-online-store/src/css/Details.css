@@ -1,0 +1,87 @@
+.div-details {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.div-btn-back {
+  display: flex;
+  justify-content: flex-start;
+  width: 40%;
+}
+
+.div-cart {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  width: 40%;
+}
+
+.btn-back {
+  align-items: center;
+  background-color: rgb(0, 155, 255);
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  font-weight: 600;
+  height: 10px;
+  justify-content: center;
+  margin: 10px;
+  padding: 15px;
+  text-decoration: none;
+  transition: 0.2s;
+  width: 35px;
+}
+
+.btn-back:hover {
+  background-color: rgb(28, 125, 190);
+  border-radius: 13px;
+}
+
+.div-info-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.div-detail {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.thumbnail {
+  height: 300px;
+  width: 300px;
+}
+
+.attributes-details {
+  margin: 20px;
+}
+
+li {
+  list-style: circle;
+}
+
+.product-detail-name {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.span-price {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.warranty {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+hr {
+  width: 70%;
+}

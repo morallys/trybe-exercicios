@@ -1,0 +1,89 @@
+.cartImg {
+  height: 35px;
+  transition: 0.5s;
+  width: 35px;
+}
+
+.cartImg:hover {
+  transform: scale(1.3);
+}
+
+.div-categories {
+  background-color: rgb(0, 155, 255);
+  border-radius: 10px;
+  margin-top: 35px;
+  min-width: 250px;
+  text-align: center;
+  transition: 0.5s;
+  width: 20%;
+}
+
+.div-categorie-link {
+  padding: 10px;
+  width: 93%;
+}
+
+.div-categorie-link:hover {
+  background-color: rgb(22, 140, 219);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  width: 93%;
+}
+
+.categorie-link {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.categorie-link:hover {
+  color: black;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-block {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.query-input {
+  border: solid 1px white;
+  border-radius: 10px;
+  width: 60%;
+}
+
+.header-block button {
+  background-color: rgb(0, 155, 255);
+  border: solid 1px rgb(0, 155, 255);
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: 0.2s;
+}
+
+.header-block button:hover {
+  background-color: rgb(22, 140, 219);
+  border-radius: 12px;
+}
+
+.div-main {
+  display: flex;
+  justify-content: center;
+}
+
+.div-query-products {
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px 0 0 20px;
+  width: 70%;
+}

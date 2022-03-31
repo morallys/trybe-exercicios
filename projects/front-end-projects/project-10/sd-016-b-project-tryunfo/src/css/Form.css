@@ -1,0 +1,28 @@
+form {
+  align-items: center;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  margin-left: 20px;
+}
+
+input, textarea, select {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+button {
+  width: 50%;
+}
+
+.cardRare {
+  display: flex;
+}
+
+.cardTrunfo {
+  display: flex;
+}

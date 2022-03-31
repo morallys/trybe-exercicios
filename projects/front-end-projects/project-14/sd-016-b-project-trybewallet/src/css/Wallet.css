@@ -1,0 +1,24 @@
+.div-header {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.div-title {
+  min-width: 300px;
+  width: 50%;
+}
+
+.div-component-header {
+  display: flex;
+  justify-content: space-around;
+  min-width: 300px;
+  width: 50%;
+}
+
+.div-expenses {
+  align-items: center;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+}

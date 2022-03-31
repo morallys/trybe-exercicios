@@ -1,0 +1,64 @@
+body {
+  background-color: cadetblue;
+}
+
+.titleHeader {
+  color: white;
+  text-align: center;
+}
+
+.divDisplay {
+  border: solid 1px red;
+  display: flex;
+  width: 100%;
+}
+
+.divForm {
+  border: solid 1px blueviolet;
+  justify-content: flex-start;
+  width: 50%;
+}
+
+.divCard {
+  border: solid 1px pink;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.divListCards {
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.titleListCards {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.cardItem {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.btnListItem {
+  background-color: red;
+  border: 1px red solid;
+  border-radius: 3px;
+  color: white;
+  padding: 10px;
+}
+
+.btnListItem:hover {
+  background-color: rgb(197, 81, 81);
+  border: 1px rgb(197, 81, 81) solid;
+  border-bottom: 3px white solid;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  padding: 11px;
+}

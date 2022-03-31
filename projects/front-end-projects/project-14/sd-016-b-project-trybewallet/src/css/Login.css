@@ -1,0 +1,27 @@
+body {
+  background-color: #79756d;
+}
+
+.img-logo {
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 170px;
+}
+
+.div-login {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+}
+
+input {
+  border-radius: 5px;
+  height: 25px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.btn-login {
+  border-radius: 5px;
+}

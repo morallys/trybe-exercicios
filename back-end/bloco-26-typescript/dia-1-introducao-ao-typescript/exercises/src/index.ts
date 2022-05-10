@@ -24,6 +24,6 @@ console.log(`Trapézio de base maior 100cm, base menor 70cm e com altura 50cm: $
 console.log(`Trapézio de base maior 75cm, base menor 50cm e com altura 35cm: ${Exercise.trapezoid(75, 50, 35)}cm²`);
 console.log(`Trapézio de base maior 150cm, base menor 120cm e com altura 80cm: ${Exercise.trapezoid(150, 120, 80)}cm²`);
 
-console.log(`Círculo de raio 25cm tem área de: ${Exercise.circle(25)}cm²`);
-console.log(`Círculo de raio 100cm tem área de: ${Exercise.circle(100)}cm²`);
-console.log(`Círculo de raio 12,5cm tem área de: ${Exercise.circle(12.5)}cm²`);
+console.log(`Círculo de raio 25cm tem área de: ${Exercise.circle(25).toFixed(2)}cm²`);
+console.log(`Círculo de raio 100cm tem área de: ${Exercise.circle(100).toFixed(2)}cm²`);
+console.log(`Círculo de raio 12,5cm tem área de: ${Exercise.circle(12.5).toFixed(2)}cm²`);

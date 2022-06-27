@@ -1,0 +1,18 @@
+1 - db.bios.find({ _id: 8 });
+2 - db.bios.find({ _id: 8 }, { _id: 1, name: 1 });
+3 - db.bios.find({ _id: 8 }, { _name: 1, birth: 1 });
+4 - db.bios.find({ "name.first": "John" });
+5 - db.bios.find().limit(3).pretty();
+6 - db.bios.find().skip(5).limit(2);
+
+De acordo com a documentação, para realizar o import do arquivo com o 'mongoimport' é preciso estar fora do mongo, num terminal normal.
+
+mongoimport --db=nome_do_db --collection=nome_da_tabela --file=/caminho/do/arquivo
+
+7 - db.books.countDocuments({});
+8 - Duas formas que encontrei para fazer a questão:
+    db.books.find({ status: "PUBLISH" }).count();
+    db.books.countDocuments( { status: { $eq: "PUBLISH"} })
+
+9 - db.books.find({}, { title: 1, isbn: 1, pageCount: 1, _id: 0 }).limit(3);
+10 - db.books.find({ status: "MEAP"}, { _id: 1, title: 1, authors: 1, status: 1 }).skip(5).limit(10);

@@ -1,0 +1,6 @@
+nome idade
+Maria 60
+Juan 33
+Maruska 41
+Kadidija 39
+Kaline 39
